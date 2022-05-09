@@ -15,7 +15,12 @@ background-color: #2C3E50;
 .bg-color-footer2{
     background-color: #2C3E50;
 }
+
+.bg-color-btn{
+    background-color: #1ABC9C;
+}
 .img{
     width: 25px;
+    text-align: center;
     
 }
