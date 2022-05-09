@@ -15,21 +15,22 @@
 
     <!-- Navbar position fixed -->
 
-    <header class="bg-header">
-        <div class="container text-white">
-            <div class="row">
-                <div class="col-4">
-                    <h3>START BOOTSTRAP</h3>
-                </div>
-                <div class="col-4"></div>
-                <div class="col-4">
-                        <ul class="d-inline">
-                            <li>PORTFOLIO</li>
-                            <li>ABOUT</li>
-                            <li>CONTACT</li>
-                        </ul>
-                </div>
-            </div>
+    <header class="bg-header py-3">
+        <div class="container">
+            <nav class="d-flex text-white align-items-center">
+                <div class="fw-bold fs-3">START BOOTSTRAP</div>
+                <ul class="nav ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-bold" href="#">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-bold" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-bold">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
 
     </header>
@@ -56,8 +57,6 @@
                                     </div>
                                 </div>
                             </div>
-                            
-
                             <h5>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h5>
                     </div>
                 </div>
@@ -67,9 +66,11 @@
         <!-- Sezione 2 Portfolio bg-white + 6 cards -->
 
         <section>
-            <div class="container">
-                <h2 class="text-center py-4">PORTFOLIO</h2>
-                <div class="row">
+            <div class="container py-3">
+                <div>
+                    <h2 class="fs-1 fw-bold text-center">PORTFOLIO</h2>
+                </div>
+                <div class="row py-3">
                     <div class="col-3 mx-auto">
                         <div class="d-flex align-items-center"> 
                             <div class="border-bottom flex-grow-1 border-3 border-dark"></div>
@@ -84,24 +85,24 @@
                 
                 <div class="row">
                     <div class="col-4 py-2">
-                        <img src="img/cabin.png" alt="" class="img-fluid">
+                        <img src="img/cabin.png" alt="" class="img-fluid rounded">
                     </div>
                     <div class="col-4 py-2">
-                        <img src="img/cake.png" alt="" class="img-fluid">
+                        <img src="img/cake.png" alt="" class="img-fluid rounded">
                     </div>
                     <div class="col-4 py-2">
-                        <img src="img/circus.png" alt="" class="img-fluid">
+                        <img src="img/circus.png" alt="" class="img-fluid rounded">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-4 py-4">
-                        <img src="img/game.png" alt="" class="img-fluid">
+                        <img src="img/game.png" alt="" class="img-fluid rounded">
                     </div>
                     <div class="col-4 py-4">
-                        <img src="img/safe.png" alt="" class="img-fluid">
+                        <img src="img/safe.png" alt="" class="img-fluid rounded">
                     </div>
                     <div class="col-4 py-4">
-                        <img src="img/submarine.png" alt="" class="img-fluid">
+                        <img src="img/submarine.png" alt="" class="img-fluid rounded">
                     </div>
                 </div>
                 
@@ -113,8 +114,10 @@
         <section class="bg-color-sez1">
             <div class="container text-white">
                 <div class="row py-5 text-center">
-                    <span><h2>ABOUT</h2></span>
-                    <div class="row">
+                    <div>
+                        <h2 class="fs-1 fw-bold text-center">ABOUT</h2>
+                    </div>
+                    <div class="row py-4">
                         <div class="col-3 mx-auto">
                             <div class="d-flex align-items-center"> 
                                 <div class="border-bottom flex-grow-1 border-3 border-white"></div>
@@ -133,7 +136,7 @@
                     </div>
                     <div class="row py-5">
                         <div class="col text-center">
-                            <button type="button" class="btn btn-primary bg-color-btn">Download</button>
+                            <button type="button" class="btn btn-primary bg-color-btn btn-light text-white">Download</button>
                         </div>                        
                     </div>
                     
@@ -146,7 +149,9 @@
         <Section>
             <div class="container">
                 
-                    <h3>CONTACT ME</h3>
+                    <div>
+                        <h2 class="fs-1 fw-bold text-center py-4">CONTACT ME</h2>
+                    </div>
                     <div class="row">
                         <div class="col-3 mx-auto">
                             <div class="d-flex align-items-center"> 
@@ -158,17 +163,24 @@
                             </div>
                         </div>
                     </div>
-                <div>
-                    <ol class="list-group list-group-numbered">
-                        <li class="list-group-item">Name</li>
-                        <li class="list-group-item">E-mail address</li>
-                        <li class="list-group-item">Phone number</li>
-                        <li class="list-group-item">Message</li>
-                    </ol>
-                </div>
-                <div class="container">
-                    <button type="button" class="btn btn-primary">Primary</button>
-                </div>
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class>
+                            <button type="submit" class="btn btn-primary bg-color-btn btn-light text-white">Submit</button>
+                        </div>
+                    </form>
+                
             </div>
         </Section>
 
@@ -176,10 +188,8 @@
 
     <footer class="bg-color-footer1">
         <!-- Footer superiore -->
-
-
         <div class="container">
-            <div class="row">
+            <div class="row text-white py-5">
                 <div class="col-4">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, iure. Fugit, quas aliquam laborum qui veniam, voluptate eos voluptatibus commodi laboriosam vel enim. Excepturi ipsam illum quia nobis accusantium animi.</p>
                 </div>
@@ -193,14 +203,10 @@
         </div>
 
         <!--Sezione Footer inferiore  -->
-    <section class="bg-color-footer2">
-        <div class="container">
+    <section class="bg-color-footer2 py-3">
+        <div class="container d-flex justify-content-center text-white">
             <div class="row">
-                <div class="col-4"></div>
-                <div class="col-4">Copyright your website 2019</div>
-                <div class="col-4"></div>
-                    
-                
+                <div class="col">Copyright your website 2019</div>
             </div>
         </div>
     </section>
