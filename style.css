@@ -21,6 +21,9 @@ background-color: #2C3E50;
 }
 .img{
     width: 25px;
-    text-align: center;
+    filter: invert(1);
     
+}
+.black-star{
+    width: 25px;
 }
